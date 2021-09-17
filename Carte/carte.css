@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Josefin Slab', serif;
+}
+body {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+}
+
+/*-- Nav --*/
+nav{
+    color: white;
+    background: black;
+    border-top: 0.15rem solid goldenrod;
+    border-bottom: 0.15rem solid goldenrod;
+}
+#title{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0.3rem;
+}
+span i {
+    font-size: 1.5rem;
+    color: goldenrod;
+    border-radius:3rem;
+    position: relative;
+    top: 0.25rem;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+/*-- /Nav --*/
+
+/*-- Slider --*/
+.carousel-item img {
+    height: 20rem;
+}
+.carousel-caption h2 {
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+    color: white;
+}
+.overlay {
+    width: 100%;
+    height: 4rem;
+    background: #000;
+    opacity: 0.4;
+    position: relative;
+    top: -4rem;
+}
+/*-- /Slider --*/
+
+/*-- Carte --*/
+.carte{
+    display: inline-block;
+}
+section h2.title-bar{
+    background-color: goldenrod;
+    border: 2px solid black;
+    color: black;
+    font-size: 2rem;
+    border-radius: 4rem;
+}
+section a.title{
+    color: goldenrod;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 1.3rem;
+    transition: all 1s;
+    width: 80%;
+}
+section a.title:hover{
+    color: white;
+    background-color: goldenrod;
+    margin-left: 3rem;
+    transition: 1s;
+}
+section .container .card{
+    border: 2px solid black;
+    background-color: goldenrod;
+}
+section .container .card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+section .container .card p{
+    font-size: 1.3rem;
+}
+section .black-line{
+    position: relative;
+        left: 1rem;
+        height: 0.15rem;
+        width: 90%;
+        background: #000;
+        margin-top: 1.5rem;
+}
+#info-carousel{
+    display: none;
+}
+/*-- /Carte --*/
+
+/*-- Bar --*/
+section.bar{
+    display: none;
+}
+#info-carousel-bar{
+    display: none;
+}
+/*-- /Bar --*/
+
+/*-- Footer --*/
+footer {
+    margin-top: 0.5rem;
+    height: 9rem;
+    background: #000;
+    color: white;
+}
+#col-0{
+    display: none;
+}
+.row{
+    text-align: left;
+    font-size: 0.8rem;
+}
+#col-1{
+    text-align: left;
+    margin-top: 1rem;
+}
+#col-2{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+#col-3{
+    margin-top: 1rem;
+    text-align: center;
+}
+/*-- /Footer --*/
+
+@media screen and (min-width: 768px) {
+
+    /*-- Nav --*/
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    /*Chef Info*/
+    .chef-info {
+        display: inline;
+    }
+
+    /*-- Carte --*/
+    section a.title{
+        color: goldenrod;
+        border: 2px solid black;
+        background-color: white;
+        font-size: 1.3rem;
+        transition: all 1s;
+        width: 60%;
+    }
+    section .black-line{
+        left: 1rem;
+        height: 0.12rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    /*-- Slider --*/
+    .carousel-item img {
+        height: 30rem;
+    }
+
+    /*-- Carte --*/
+    section.carte{
+        display: inline-block;
+        width: 50%;
+    }
+    #info-carousel{
+        display: flex;
+        width: 35%;
+        float: right;
+        margin-right: 1rem;
+        position: relative;
+        bottom: 1rem;
+    }
+    section .black-line{
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+
+    /*-- /Bar --*/
+    section.bar{
+        display: inline-block;
+        width: 50%;
+    }
+    .card{
+        margin-top: 1rem;
+    }
+    #info-carousel-bar{
+        display: flex;
+        width: 35%;
+        float: right;
+        margin-right: 1rem;
+        position: relative;
+        bottom: -1rem;
+    }
+    #info-carte-img{
+        width: 20rem;
+        max-height: 14rem;
+        border-radius: 4rem;
+        background-size: cover;
+    }
+    section .black-line2{
+        position: relative;
+        left: 1rem;
+        height: 0.15rem;
+        width: 95%;
+        background: #000;
+        margin-top: 1.5rem;
+    }
+
+    /*-- Footer --*/
+    footer{
+        position: relative;
+        top: 5rem;
+    }
+}
+

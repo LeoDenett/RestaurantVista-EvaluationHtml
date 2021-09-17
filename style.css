@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.grow{
+    transition: 0.5s;
+}
+
+.grow:hover, .grow:focus{
+    transition: 0.5s;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/*-- Nav --*/
+nav{
+    color: white;
+    background: black;
+    border-top: 0.15rem solid goldenrod;
+    border-bottom: 0.15rem solid goldenrod;
+}
+#title{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0.3rem;
+}
+span i {
+    font-size: 1.5rem;
+    color: goldenrod;
+    border-radius:3rem;
+    position: relative;
+    top: 0.25rem;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+/*-- /Nav --*/
+
+/*-- Slider --*/
+.carousel-item img {
+    width: 100%;
+    height: 20rem;
+}
+.carousel-caption h2 {
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+    color: white;
+}
+.overlay {
+    width: 100%;
+    height: 4rem;
+    background: #000;
+    opacity: 0.4;
+    position: relative;
+    top: -4rem;
+}
+/*-- /Slider --*/
+
+/*-- info --*/
+
+.info{
+    font-size: 16px;
+}
+    /*-- infoContact --*/
+    .infoContact{
+        margin-bottom: 2rem;
+        line-height: 2.2rem;
+        background: goldenrod;
+        border: 0.15rem solid black; 
+    }
+    h1{
+        color: black;
+    }
+    .infoContact a{
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    /*-- /infoContact --*/
+
+    /*-- line --*/
+    .line{
+        background-color:black;
+        height: 0.12rem;
+        width: 50%;
+        align-self: center;
+    }
+    /*-- /line --*/
+
+    /*-- infoHour --*/
+    .infoHour{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: goldenrod;
+        background: black;
+        border: 0.15rem solid goldenrod;
+    }
+    .infoHour p{
+        line-height: 1.2rem;
+        color: goldenrod;
+    }
+    /*-- /infoHour --*/
+
+/*-- /info --*/
+
+/*-- Table Vista --*/
+div.table-vista {
+    background-color: white;
+    border: 0.15rem solid goldenrod;
+    border-top: 0.15rem solid black;
+    border-right: 0.15rem solid black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.table-title h2 {
+    color: goldenrod;
+    font-size: 2rem;
+    text-align: center;
+}
+div a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.table-text{
+    display: none;
+}
+/*-- /Table Vista --*/
+
+/*-- Button Reservation --*/
+#reservation {
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    border: 2px solid goldenrod;
+}
+.card-container {
+    max-height: 17rem;
+}
+.form-reservation{
+    max-height: 15rem;
+    margin-bottom: 1rem;
+}
+#card-img {
+    height: 15rem;
+    margin-top: 0.5rem;
+}
+/* */
+/*Formulaire de Reservation*/
+.card-content {
+    display: inline-block;
+    position: relative;
+    left: 0.9rem;
+    bottom: 14.6rem;
+    border: 2px solid goldenrod;
+    padding: 9px;
+}
+.card-content h3 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.form-row select {
+    color: white;
+    background-color: transparent;
+    padding: 8px 12px;
+    border: 2px solid goldenrod;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 1.3rem;
+    width: 7.5rem;
+}
+#option {
+    color: black;
+    background-color: white;
+}
+.form-row input {
+    color: white;
+    border: 2px solid goldenrod;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 8px 12px;
+    width: 7.5rem;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    font-size: 1.3rem;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+#submit{
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid white;
+    position: relative;
+    right: 0.4rem;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+}
+/*Chef Info*/
+.chef img{
+    width: 100%;
+}
+.chef-info {
+    display: none;
+}
+/*-----End Button Reservation-----*/
+
+/*-----Footer-----*/
+footer {
+    margin-top: 1rem;
+    height: 9rem;
+    background: #000;
+    color: white;
+}
+.row{
+    text-align: left;
+    font-size: 0.8rem;
+}
+#footer-text{
+    display: none;
+}
+#col-1{
+    text-align: left;
+    margin-top: 1rem;
+}
+#col-2{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+#col-3{
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*-- Nav --*/
+    #title{
+        bottom: -0.5rem;
+    }
+    .nav-link {
+        position: relative;
+        bottom: -0.4rem;
+    }
+
+    /*-- Slider --*/
+    #card-img {
+        height: 20rem;
+    }
+
+    /*Formulaire de Reservation*/
+    .card-container {
+        max-height: 23rem;
+    }
+    .card-content{
+        position: relative;
+        bottom: 17rem;
+        left: 25rem;
+    }
+
+    /*Chef Info*/
+    .chef-info {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    /*-- Nav --*/
+    .navbar{
+        height: 4rem;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    .nav-link {
+        font-size: 1.8rem;
+    }
+
+    /*-- Slider --*/
+    .carousel-item img {
+     width: 100%;
+     height: 35rem;
+    }
+    
+    /*-- Table Vista --*/
+    #line22{
+        display: none;
+    }
+    div.table-vista {
+        width: 70%;
+    }
+    .table-text{
+        display: inline-block;
+        position: relative;
+        bottom: 2rem;
+    }
+    div a {
+        transition: 0.5s;
+    }
+    div a:hover, div a:focus{
+        transition: 0.5s;
+        font-size: 19px;
+        color: goldenrod;
+    }
+
+    /*Formulaire de Reservation*/
+    #reservation {
+        margin-bottom: 3rem;
+        padding: 1rem;
+    }
+    .card-content{
+        position: relative;
+        left: 50rem;
+        bottom: 20rem;
+    }
+    .card-container {
+        max-height: 30rem;
+    }
+    #card-img {
+        height: 25rem;
+        margin-top: 0.5rem;
+    }
+
+    /*Chef Info*/
+    .chef img {
+        height: 35rem;
+    }
+    .chef-info {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
